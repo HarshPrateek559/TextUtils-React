@@ -1,0 +1,19 @@
+body{
+    background-color: #d8eef5
+}
+
+
+
+.nav-item:hover{
+    background-color: white;
+    transition: 0.4s linear;
+}
+
+.nav-link:hover{
+    color:black !important
+}
+
+.nav-item:active{
+    background-color: white; 
+    font-weight: bold;
+}
