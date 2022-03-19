@@ -1,7 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types"
-import { Link } from "react-router-dom";
-// =>@
+import PropTypes from "prop-types";
+// import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <>
@@ -10,7 +9,7 @@ export default function Navbar(props) {
         className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="container-fluid">
-            <b>{props.title}</b>
+          <b>{props.title}</b>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,10 +24,11 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item mx-3">
-                {/* <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link" aria-current="page" href="home">
                   TextArea
-                </a> */}
-                <Link className="nav-link" aria-current="page" to="/">
+                </a>
+              </li>
+              {/* <Link className="nav-link" aria-current="page" to="/">
                   TextArea
                 </Link>
               </li>
@@ -36,17 +36,21 @@ export default function Navbar(props) {
                 <Link className="nav-link" to="/about">
                   {props.aboutUs}
                 </Link>
-              </li>
+              </li> */}
             </ul>
 
-            <div className={`form-check form-switch text-${props.mode==="light"?"dark":"light"}`}>
+            <div
+              className={`form-check form-switch text-${
+                props.mode === "light" ? "dark" : "light"
+              }`}
+            >
               <input
                 className="form-check-input "
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckDefault"
                 onClick={props.toggle}
-                style= {{cursor:"pointer"}}
+                style={{ cursor: "pointer" }}
               />
               <label
                 className="form-check-label"
@@ -64,9 +68,9 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-  title : PropTypes.string.isRequired,
-  aboutUs : PropTypes.string.isRequired
-}
+  title: PropTypes.string.isRequired,
+  aboutUs: PropTypes.string.isRequired,
+};
 
 Navbar.defaultProps = {
   title: "TextUtility",
