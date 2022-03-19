@@ -23,12 +23,12 @@ export default function About(props) {
         I hope that everyone using this app would have a good time with it
       </p>
       <p style={{ textAlign: "right" }}>-Made by Harsh Prateek</p>
-      <div class="accordion" id="accordionExample">
+      <div className="accordion" id="accordionExample">
         <h1>FAQ about the app</h1>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingOne">
             <button
-              class="accordion-button"
+              className="accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -41,18 +41,18 @@ export default function About(props) {
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body" style={backStyle}>
+            <div className="accordion-body" style={backStyle}>
               I made this app so that anyone who visits my site, gets some valuable insights from my site about his text. 
               </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -65,19 +65,19 @@ export default function About(props) {
             </h2>
             <div
               id="collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body" style={backStyle}>
+              <div className="accordion-body" style={backStyle}>
                 This app can be used by anyone who wish to know somethings about his text. I created it in an easy to use manner so that everyone can use this app with ease. 
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -90,11 +90,11 @@ export default function About(props) {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body" style={backStyle}>
+              <div className="accordion-body" style={backStyle}>
                 All the different apps like this are also good and do many things this app can do, but where this app stands apart is the fact that it robust and highly user friendly. I have made it after I saw the pathetic looking UI of other apps so have taken great care on the usability of the app. This is the unique selling point of this app, it's superpower.
               </div>
             </div>

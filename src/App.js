@@ -4,7 +4,7 @@ import Form from "./components/Form.js";
 import Alert from "./components/Alert";
 import { useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
@@ -41,11 +41,12 @@ function App() {
   };
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar mode={darkMode} toggle={toggle} text={text} />
         <Alert alert={alert} />
+        <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/>
         {/* <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/> */}
-        <Routes>
+        {/* <Routes>
             <Route exact path="/" element={<Form
                 heading="Enter the text to analyze"
                 mode={darkMode}
@@ -54,7 +55,7 @@ function App() {
               
             <Route exact path="/about" element={<About mode={darkMode}/>} />
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 }
