@@ -41,21 +41,20 @@ function App() {
   };
   return (
     <>
-      {/* <Router> */}
+      <Router>
         <Navbar mode={darkMode} toggle={toggle} text={text} />
         <Alert alert={alert} />
-        <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/>
-        {/* <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/> */}
-        {/* <Routes>
+        {/* <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/>
+        <Form heading="Enter the text to analyze" mode={darkMode} showAlert={showAlert}/> */}
+        <Routes>
             <Route exact path="/" element={<Form
                 heading="Enter the text to analyze"
                 mode={darkMode}
                 showAlert={showAlert}
               />}/>
-              
             <Route exact path="/about" element={<About mode={darkMode}/>} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }
