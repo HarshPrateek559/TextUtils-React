@@ -3,11 +3,11 @@ import Navbar from "./components/Navbar.js";
 import Form from "./components/Form.js";
 import Alert from "./components/Alert";
 import { useState } from "react";
-// import {
-//   HashRouter as Router,
-//   Route,
-//   Routes
-// } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 import About from "./components/About";
 function App() {
   const [darkMode, setDarkMode] = useState("light");
@@ -41,16 +41,16 @@ function App() {
   };
   return (
     <>
-      {/* <Router> */}
+      <Router>
       <Navbar mode={darkMode} toggle={toggle} text={text} />
       <Alert alert={alert} />
 
-      <Form
+      {/* <Form
         heading="Enter the text to analyze"
         mode={darkMode}
         showAlert={showAlert}
-      />
-      {/* <Routes>
+      /> */}
+      <Routes>
             <Route exact path="/" element={<Form
                 heading="Enter the text to analyze"
                 mode={darkMode}
@@ -58,7 +58,7 @@ function App() {
               />}/>
             <Route exact path="/about" element={<About mode={darkMode}/>} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }
